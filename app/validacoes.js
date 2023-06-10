@@ -1,5 +1,16 @@
 function verficarValidadeChute(numeroChute){
     const numero = +numeroChute
+    const numeroChuteMin = numeroChute.toLowerCase()
+
+    if(numeroChuteMin === "game over"){
+        document.body.innerHTML = `
+        <h1>Você disse: </h1>
+        <h3>GAME OVER!</h3>
+        <input type="button" id="jogar-novamente" class="btn-jogar" value="Jogar novamente">
+        `
+        jogarNovamente()
+        return
+    }
 
     if(validarComoNumero(numero)){
         elementoChute.innerHTML += `<div>Valor inválido!</div`
@@ -18,7 +29,7 @@ function verficarValidadeChute(numeroChute){
         <input type="button" id="jogar-novamente" class="btn-jogar" value="Jogar novamente">
         `
         jogarNovamente()
-        
+
     } else if(numero < numeroSecreto){
         elementoChute.innerHTML += `<div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div>` 
     }else{
