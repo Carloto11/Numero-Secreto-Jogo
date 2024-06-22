@@ -19,7 +19,7 @@ O Número Secreto está hospedado no Github Pages neste link: [https://yasmin-ca
 ## Rodar o projeto em sua máquina
 1. Coloque no terminal:
 ```
-git clone https://github.com/Yasmin-Carloto/CalculadoraCB.git
+git clone https://github.com/Yasmin-Carloto/Numero-Secreto-Jogo.git
 ```
 2. Abrir com o VS CODE (ou IDE de preferência)
 
